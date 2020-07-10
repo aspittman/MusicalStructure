@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rock_textview"
+        style="@style/GenreStyle"
+        android:background="@color/rock_color"
+        android:text="@string/rock_artists" />
+
+    <TextView
+        android:id="@+id/rap_textview"
+        style="@style/GenreStyle"
+        android:background="@color/rap_color"
+        android:text="@string/rap_artists" />
+
+    <TextView
+        android:id="@+id/classical_textview"
+        style="@style/GenreStyle"
+        android:background="@color/classical_color"
+        android:text="@string/classical_artists" />
+
+    <TextView
+        android:id="@+id/club_dance_textview"
+        style="@style/GenreStyle"
+        android:background="@color/club_dance"
+        android:text="@string/club_dance_artists" />
+
+</LinearLayout>

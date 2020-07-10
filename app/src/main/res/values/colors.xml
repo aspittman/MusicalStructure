@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="rock_color">#FD8E09</color>
+
+    <color name="rap_color">#379237</color>
+
+    <color name="classical_color">#8800A0</color>
+
+    <color name="club_dance">#16AFCA</color>
+</resources>

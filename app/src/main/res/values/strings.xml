@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="rock_artists">Rock</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="rap_artists">Rap</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="classical_artists">Classical</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="club_dance_artists">Club/Dance</string>
+</resources>
