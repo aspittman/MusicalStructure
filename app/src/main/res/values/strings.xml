@@ -1,15 +1,21 @@
 <resources>
     <string name="app_name">Musical Structure</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="rock_artists">Rock</string>
+    <!--Class Names-->
+    <string name="rock_artists">Now Playing Rock</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="rap_artists">Rap</string>
+    <string name="rap_artists">Now Playing Rap</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="classical_artists">Classical</string>
+    <string name="classical_artists">Now Playing Classical</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="club_dance_artists">Club/Dance</string>
+    <string name="club_dance_artists">Now Playing Club/Dance</string>
+
+     <!--Names for MainActivity-->
+    <string name="rock_class">Rock</string>
+
+    <string name="rap_class">Rap</string>
+
+    <string name="classical_class">Classical</string>
+
+    <string name="club_dance_class">Club/Dance</string>
 </resources>

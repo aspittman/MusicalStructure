@@ -16,21 +16,23 @@ public class RapActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rap);
-
-        final ListView list = findViewById(R.id.rap_listview);
+        setContentView(R.layout.activity_music_list);
 
         ArrayList<Music> arrayList = new ArrayList<>();
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
+        arrayList.add(new Music("Play Song >",  "B.O.B", "Outkast"));
+        arrayList.add(new Music("Play Song >",  "The Symphony", "Marley Marl"));
+        arrayList.add(new Music("Play Song >",  "That’s the Joint", "Funky 4 + 1"));
+        arrayList.add(new Music("Play Song >",  "Push It", "Salt-N-Pepa"));
+        arrayList.add(new Music("Play Song >", "Lost Ones", "Lauryn Hill"));
+        arrayList.add(new Music("Play Song >",  "Me, Myself and I", "De La Soul"));
+        arrayList.add(new Music("Play Song >",  "Top Billin", "Audio Two"));
+        arrayList.add(new Music("Play Song >",  "California Love", "2Pac and Dr. Dre"));
 
-        ArrayAdapter<Music> arrayAdapter = new ArrayAdapter<Music>(this, android.R.layout.simple_list_item_activated_1, arrayList);
-        list.setAdapter(arrayAdapter);
+        MusicAdapter adapter = new MusicAdapter(this, arrayList);
+
+        ListView listView = findViewById(R.id.music_list);
+
+        listView.setAdapter(adapter);
+
     }
 }

@@ -16,21 +16,22 @@ public class ClubDanceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_club_dance);
-
-        final ListView list = findViewById(R.id.club_dance_listview);
+        setContentView(R.layout.activity_music_list);
 
         ArrayList<Music> arrayList = new ArrayList<>();
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
+        arrayList.add(new Music("Play Song >", "Light Years Away", "Oliver"));
+        arrayList.add(new Music("Play Song >", "Okay", "Shiba San"));
+        arrayList.add(new Music("Play Song >", "Summertime Sadness", "Lana Del Ray"));
+        arrayList.add(new Music("Play Song >", "Years", "Alesso feat. Matthew Koma"));
+        arrayList.add(new Music("Play Song >", "Voicemail", "Green Velvet & Patrick Topping"));
+        arrayList.add(new Music("Play Song >", "Time for us", "Nicolas Jaar"));
+        arrayList.add(new Music("Play Song >", "Good Enough", "Alice Wonderland"));
+        arrayList.add(new Music("Play Song >", "BTSTU", "Jai Paul"));
 
-        ArrayAdapter<Music> arrayAdapter = new ArrayAdapter<Music>(this, android.R.layout.simple_list_item_activated_1, arrayList);
-        list.setAdapter(arrayAdapter);
+        MusicAdapter adapter = new MusicAdapter(this, arrayList);
+
+        ListView listView = findViewById(R.id.music_list);
+
+        listView.setAdapter(adapter);
     }
 }

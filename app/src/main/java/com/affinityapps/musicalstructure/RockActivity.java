@@ -14,24 +14,24 @@ public class RockActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rock);
-
-        final ListView list = findViewById(R.id.rock_listview);
+        setContentView(R.layout.activity_music_list);
 
         ArrayList<Music> arrayList = new ArrayList<>();
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
-        arrayList.add(new Music("Play Song >", "Rock", "bleh"));
+        arrayList.add(new Music("Play Song >", "Stairway to Heaven", "Led Zeppelin"));
+        arrayList.add(new Music("Play Song >", "Hey Jude", "Beatles"));
+        arrayList.add(new Music("Play Song >", "All Along the Watchtower", "Hendrix, Jimi"));
+        arrayList.add(new Music("Play Song >", "Satisfaction", "Rolling Stones"));
+        arrayList.add(new Music("Play Song >", "Like A Rolling Stone", "Dylan, Bob"));
+        arrayList.add(new Music("Play Song >", "Another Brick In The Wall", "Pink Floyd"));
+        arrayList.add(new Music("Play Song >", "Won't Get Fooled Again", "Who"));
+        arrayList.add(new Music("Play Song >", "Hotel California", "Eagles"));
 
+        MusicAdapter adapter = new MusicAdapter(this, arrayList);
 
+        ListView listView = findViewById(R.id.music_list);
 
-        ArrayAdapter<Music> arrayAdapter = new ArrayAdapter<Music>(this, android.R.layout.simple_list_item_activated_1, arrayList);
-        list.setAdapter(arrayAdapter);
+        listView.setAdapter(adapter);
+
     }
 }
 
